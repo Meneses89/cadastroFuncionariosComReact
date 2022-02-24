@@ -1,0 +1,108 @@
+.containerHome{
+    /* background-color: #31393C; */
+    /* background-color: #1a181a; */
+    background-color: #fff;
+    color: #000;
+    overflow: hidden;
+    padding: 5%;
+}
+
+.posicaoTituloHome{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.tituloHome {
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+}
+  
+@keyframes shine {
+    0% {
+    background-position-x: -500%;
+    }
+    100% {
+    background-position-x: 500%;
+    }
+}
+
+.inputNome, .inputMenor{
+    border:0;
+    border-bottom:1px solid #555;  
+    background:transparent;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:#000;
+}
+
+.inputNome:focus{
+    border:none;	
+    outline:none;
+    border-bottom:2px solid rgb(175, 0, 0);
+}
+.inputMenor:focus{
+    border:none;	
+    outline:none;
+    border-bottom:2px solid rgb(175, 0, 0);
+}
+
+.inputNome{
+    width: 100%;
+}
+
+.inputMenor{
+    width: 48%; 
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.posicaoInputMenor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnCadastrar{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 7px;
+    background-color: #000957;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btnCadastrar:hover{
+    background-color: #1127ED;
+    transition: 2.6s;
+}
+
+.posicaoHome {
+    margin: 0 10% 5% 10% ;
+}
+
+.posicaoCard {
+    width:50%;
+    margin: 0 0 5% 10% ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+    height: 40vh;
+    margin-bottom: 4rem;
+}
